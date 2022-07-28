@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/eurodom.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: firebrick;
+    display: block;
+    margin: auto;
+}
+.nav-links ul li:hover::after{
+    width: 50%;
+}
+.text-box{
+    width: 75%;
+    color: rgb(248, 248, 248);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text-box p{
+    margin: 10px 0 50px;
+    font-size: 14px;
+    color: aliceblue;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    padding: 10px 30px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid firebrick;
+    background: firebrick;
+    transition: 1s;
+}
+
+nav.fa{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: firebrick;
+        height: 90vh;
+        width: 150px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 3;
+        transition: 1s;
+    }
+    nav.fa{
+        display: block;
+        color: aliceblue;
+        font-size: 20px;
+        cursor: pointer;
+    }    
+    nav-links ul{
+        padding: 30px;
+    }
+}
+/*----- support -----*/
+
+.support{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p{
+    color: rgb(40, 43, 44);
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.support-col{
+    flex-basis: 25%;
+    background: rgb(216, 128, 128);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 5px 14px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.support-col:hover{
+    box-shadow: 0 0 30px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 800px){
+    .row{
+        flex-direction: column;
+
+    }
+}
+
+/*------ campus -----*/
+
+.campus{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background:rgb(255, 40, 40);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 400;
+    color: aliceblue;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 45%;
+    opacity: 1;
+}
+
+
+/*----- programming languages ------*/
+
+.programminglanguages{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.programminglanguages-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.programminglanguages-col img{
+    width: 50%;
+    border-radius: 10px;
+}
+.programminglanguages-col h3{
+    margin-top: 14px;
+    margin-bottom: 14px;
+    text-align: left;
+}

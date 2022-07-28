@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Implementing design - Easy Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+      <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/algebra.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SUPPORT</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Implementing</h1>
+        <p>For this website I used HTML, CSS and <br>JavaScript.</p>
+        <a href="" class="hero-btn">Visit this page to find out more</a>
+    </div>
+
+
+      </section>
+
+<!------ support ------>      
+
+<section class="support">
+    <h1>Support we offer</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+        <div class="support-col">
+            <h3>Easy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div class="support-col">
+        <h3>Intermediate</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="support-col">
+        <h3>Hard</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    
+</div>
+
+
+
+</section>
+
+<!---- campus ---->
+
+<section class="campus">
+    <h1>Campus</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/campus.jpg">
+            <div class="layer">
+                <h3>CAMPUS</h3>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<!--- programming languages---->
+
+<section class="programming languages">
+    <h1>Our programming languages</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+        <div class="programming languages-col">
+            <img src="images/html.png">
+            <h3>HTML</h3>
+        </div>
+        <div class="row">
+            <div class="programming languages-col">
+                <img src="images/css.png">
+                <h3>CSS</h3>
+            </div>
+            <div class="row">
+                <div class="programming languages-col">
+                    <img src="images/images.jpeg">
+                    <h3>JavaScript</h3>
+                </div>            
+    </div>
+</section>
+
+
+
+
+
+<!--------JavaScript for Toggle Menu-------->    
+<script>
+
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>
